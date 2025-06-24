@@ -1,0 +1,196 @@
+  /* Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #e7f6e5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        /* Menu Container */
+        .menu-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Headings */
+        h1 {
+            color: #2e8b57;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 25px;
+        }
+        
+        h1:first-of-type {
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            margin-bottom: 10px;
+        }
+        
+        h1:nth-of-type(2) {
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
+            border-bottom: 3px solid #2e8b57;
+            padding-bottom: 10px;
+            display: inline-block;
+            margin: 0 auto 30px;
+        }
+        
+        /* Menu Sections - Images ALWAYS on Right */
+      .menu-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+      }
+        
+        .menu-text {
+            flex: 1;
+            min-width: 0;
+        }
+        
+ 
+        
+        
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .menu-section {
+                gap: 15px;
+            }
+    
+        }
+        @media (max-width: 400px) {
+    li {
+        font-size: 1rem;
+    }
+    .item-price {
+        font-size: 0.95rem;
+    }
+}
+
+        
+        /* Menu Items */
+        h2 {
+            color: #2e8b57;
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            margin: 0 0 15px 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #2e8b57;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        
+        b {
+            color: #05f909aa;
+            font-weight: 500;
+        }
+        .logo-vibes{
+             width: 200px;
+            height: 200px;
+            margin: 0 auto 20px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        
+#arrow {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    background: #2e8b57;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: background 0.2s;
+    display: none;
+  
+}
+     #arrow:hover {
+            background: #78d09b;
+            transform: translateY(-3px);
+        }
+        footer{
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+    
+        }
+     /* ...existing code... */
+
+/* ...existing code... */
+.drinks{
+
+    background: #2e8b57;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius:50px;
+        transition: background 0.2s;
+        box-shadow: 0 4px 16px rgba(46, 139, 87, 0.18), 0 1.5px 4px rgba(0,0,0,0.08);
+        letter-spacing: 1px;
+        border: 2.5px solid #fff;
+        outline: 2px solid #2e8b57;
+        outline-offset: -4px;
+        text-shadow: 0 1px 6px rgba(46,139,87,0.12);
+
+   
+
+}
+.drinks:hover{
+       
+            background: #78d09b;
+            transform: translateY(-3px);
+       
+    
+}
+.item-name {
+     flex: 1;
+  padding-right: 20px;
+  color: #333;
+}
+
+.item-price {
+  min-width: 40px;
+  color: #2e8b57;
+  font-weight: bold;
+  text-align: right;
+
+}
+.menu-section li p {
+  flex-basis: 100%;
+  margin-top: 4px;
+  font-size: 10px;
+  color: #666;
+  padding-left: 10px;
+}
