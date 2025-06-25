@@ -44,7 +44,7 @@ function translateAll(toArabic = true) {
         "pomegranate molasses": "دبس رمان",
         "potato": "بطاطا",
         "salt": "ملح",
-        "ketchub": "كاتشب",
+        "ketchup": "كاتشب",
         "or": "أو",
         "on the side": "على الجانب",
         "mixed": "مشكل",
@@ -55,7 +55,9 @@ function translateAll(toArabic = true) {
         "2.5$":"225,000L.L",
         "4.5$":"405,000L.L",
         "6.5$":"585,000L.L",
-        "7.5$":"675,000L.L"
+        "7.5$":"675,000L.L",
+        "8$":"720000L.L",
+        "7$":"630000L.L"
     };
 
     document.querySelectorAll(".ingredients").forEach((p, i) => {
