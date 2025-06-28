@@ -146,33 +146,63 @@
      /* ...existing code... */
 
 /* ...existing code... */
-.drinks{
-
-    background: #2e8b57;
-    color: #fff;
-    width: 100px;
-    height: 50px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius:50px;
-        transition: background 0.2s;
-        box-shadow: 0 4px 16px rgba(46, 139, 87, 0.18), 0 1.5px 4px rgba(0,0,0,0.08);
-        letter-spacing: 1px;
-        border: 2.5px solid #fff;
-        outline: 2px solid #2e8b57;
-        outline-offset: -4px;
-        text-shadow: 0 1px 6px rgba(46,139,87,0.12);
-
-   
-
+/* From Uiverse.io by Randdose */ 
+.drinks {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.4em 1.5em; /* Reduced padding */
+  border:#2e8b57 solid 0.15em;
+  border-radius: 0.25em;
+  color: #2e8b57;;
+  font-size: 0.9em; /* Reduced font size */
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
 }
-.drinks:hover{
-       
-            background: #78d09b;
-            transform: translateY(-3px);
-       
-    
+
+.drinks:hover {
+  color: #212121;
+}
+
+.drinks:active {
+  border-color: teal;
+}
+
+.drinks::after, .drinks::before {
+  content: "";
+  position: absolute;
+  width: 6em; /* Reduced size of the circles */
+  aspect-ratio: 1;
+  background: mediumspringgreen;
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+.drinks::before {
+  left: 0;
+  transform: translateX(-6em); /* Adjusted to match new size */
+}
+
+.drinks::after {
+  right: 0;
+  transform: translateX(6em); /* Adjusted to match new size */
+}
+
+.drinks:hover:before {
+  transform: translateX(-0.8em); /* Adjusted hover position */
+}
+
+.drinks:hover:after {
+  transform: translateX(0.8em); /* Adjusted hover position */
+}
+
+.drinks:active:before,
+.drinks:active:after {
+  background: teal;
 }
 .item-name {
      flex: 1;
@@ -194,3 +224,4 @@
   color: #666;
   padding-left: 10px;
 }
+
